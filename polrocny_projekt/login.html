@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Login and registration</title>
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="connection.php">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Banger</a>
+        <ul>
+            <li><a href="#"class="active">Home</a></li>
+            <li><a href="http://localhost/DAA/polrocny_projekt/index.html">Blog</a></li>
+            <li><a href="http://localhost/DAA/polrocny_projekt/login.html">Login/Register</a></li>
+            
+        </ul>
+    </header>
+    <div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn"onclick="Login()">Log In</button>
+            <button type="button" class="toggle-btn"onclick="Register()">Register</button>
+        </div>
+    </div>
+<form id="Login"class="input-group">
+    <input type="text" class="input-field"placeholder="User ID " required>
+    <input type="text" class="input-field"placeholder="Enter Password " required>
+    <input type="checkbox"class="check-box"><span>Remember Password</span>
+    <button type="submit"class="submit-btn">Login</button>
+</form>
+<form id="Register"class="input-group">
+    <input type="text" class="input-field"placeholder="User ID " required>
+    <input type="email" class="input-field"placeholder="Email ID " required>
+    <input type="text" class="input-field"placeholder="Enter Password " required>
+    <input type="checkbox"class="check-box"><span>Suhlasim ze som pozitivne naladeny</span>
+    <button type="submit"class="submit-btn">Register</button>
+</form>
+</div>
+<script>
+var x =document.getElementById("Login");
+var y =document.getElementById("Register");
+var z = document.getElementById("btn");
+y.style.opacity="0";
+function Register(){
+x.style.opacity="0";
+y.style.opacity="1";
+x.style.left="400px";
+y.style.left="800px";
+z.style.left="110px";
+}
+
+function Login(){
+x.style.opacity="1";
+y.style.opacity="0";
+x.style.left="800px";
+y.style.left="400px";
+z.style.left="0px";
+}
+
+
+</script>
+</body>
+</html>
