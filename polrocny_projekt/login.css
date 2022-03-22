@@ -93,3 +93,9 @@ left: 800px;
 #Register{
     left: 1200px; 
  }
+ .messages{
+     z-index: 10000;
+     position: absolute;
+     left: 800px;
+     top: 415px;
+ }
