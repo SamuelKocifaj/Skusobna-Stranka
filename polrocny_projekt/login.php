@@ -7,7 +7,7 @@
     <header>
         <a href="#" class="logo">Banger</a>
         <ul>
-            <li><a href="#"class="active">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="index.php">Blog</a></li>
            
             <?php 
@@ -102,15 +102,13 @@ if($_POST){
     }else{
         $sql="SELECT * FROM usertable WHERE user_username = '$login_meno'";
         $result = $conn->query($sql);
-        // var_dump($result);
+        
         while($row = $result->fetch_row()){
             $login_meno = $row[0];
             $login_heslo = $row[2];
         }
        
-        // echo $login_meno;
-        // echo '<BR>';
-        // echo $login_heslo;
+        
         if($_POST['login_heslo'] != $login_heslo){
             echo '<p> Nespravne meno alebo heslo</p>';
         }else{

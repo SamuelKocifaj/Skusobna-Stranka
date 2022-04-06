@@ -15,7 +15,7 @@
     <a href="#" class="logo">Banger</a>
     <ul>
         <li><a href="#"class="active">Home</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="users.php">Users</a></li>
         <?php
         if(isset($_SESSION['uzivatel_meno']) ==''){
                    echo '<li><a href="login.php">Login/Register</a></li>';
